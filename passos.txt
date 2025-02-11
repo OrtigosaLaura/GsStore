@@ -1,0 +1,17 @@
+git config --global user.name OrtigosaLaura
+git config --global user.email lauraortigosa378@gmail.com
+
+criar projeto:
+dotnet new sln --name GsStore
+dotnet new mvc -o GsStore
+dotnet sln add GsStore\GsStore.csproj
+
+cd GsStore
+
+abrir nuget
+
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.1
+dotnet add package MySql.EntityFrameworkCore --version 9.0.0
