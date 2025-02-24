@@ -23,4 +23,12 @@ Arquivo .csproj
  tirar a ?
 
  criar camada de dados (models)
+
+ criar a classe contexto na pasta data
+
+ configurar a ConnectionString no appsettings.json
+
+ adicionar os serviços de Contexto e Identity no Program.cs 
+ 
+
  
