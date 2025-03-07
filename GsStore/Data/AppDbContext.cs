@@ -20,6 +20,8 @@ namespace GsStore.Data;
     {
         base.OnModelCreating(builder);
 
+        AppDbSeed seed = new(builder);
+
         #region Renomear Tabelas de Identity
         builder.Entity<IdentityUser>().ToTable("usuario");
         builder.Entity<IdentityUserRole<string>>().ToTable("usuario_perfil");

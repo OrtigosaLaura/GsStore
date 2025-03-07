@@ -35,4 +35,8 @@ namespace GsStore.Models;
 
         public decimal ValorVenda { get; set; }
 
+        public bool Destaque { get; set; }
+
+        public List<ProdutoFoto> Fotos { get; set; }
+        
     }
