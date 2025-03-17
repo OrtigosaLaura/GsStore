@@ -12,7 +12,7 @@ namespace GsStore.Models;
         [Required(ErrorMessage = "Por favor, informe a Categoria")]
         public int CategoriaId { get; set; }
         [ForeignKey("CategoriaId")]
-        public  Categoria Categoria { get; set; }
+        public Categoria Categoria { get; set; }
 
          [Required(ErrorMessage = "Por favor, informe o Nome")]
          [StringLength(60, ErrorMessage ="O Nome deve possuir no máximo 60 caracteres")]
@@ -25,7 +25,7 @@ namespace GsStore.Models;
         [Display(Name = "Quantidade em Estoque")]
         [Range(0, int.MaxValue)]
         [Required(ErrorMessage = "Por favor, informe a Quantidade de Estoques ")]
-        public int QtEstoque { get; set; }
+        public int QtdeEstoque { get; set; }
 
         [Display(Name = "Valor de Custo")]
         [Range(0, double.MaxValue)]

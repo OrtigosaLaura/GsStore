@@ -30,5 +30,4 @@ Arquivo .csproj
 
  adicionar os serviços de Contexto e Identity no Program.cs 
  
-
- 
+dotnet watch run

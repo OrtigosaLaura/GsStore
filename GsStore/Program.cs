@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 
 string conexao = builder.Configuration.GetConnectionString("GsStoreConn");
 builder.Services.AddDbContext<AppDbContext>(
-    opt => opt.UseMySQl(conexao)
+    opt => opt.UseMySQL(conexao)
 );
 
 //Configuração do Serviço de Identidade de Usuários
