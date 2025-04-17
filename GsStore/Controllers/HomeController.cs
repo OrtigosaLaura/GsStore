@@ -5,7 +5,7 @@ using GsStore.Data;
 using Microsoft.EntityFrameworkCore;
 using GsStore.ViewModels;
 
-namespace GStore.Controllers;
+namespace GsStore.Controllers;
 
 public class HomeController : Controller
 {
