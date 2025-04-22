@@ -1,8 +1,9 @@
+using System.Net.Mail;
+using System.Security.Claims;
 using GsStore.Models;
 using GsStore.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace GsStore.Controllers;
 public class AccountController : Controller
@@ -33,5 +34,18 @@ public class AccountController : Controller
             UrlRetorno = returnUrl ?? Url.Content("~/")
         };
         return View(login);
+    }
+}
+
+public bool IsValidEmail(string email)
+{
+    try
+    {
+        MailAddress m = new(email);
+        return true;
+    }
+    catch (FormatException)
+    {
+        return false;
     }
 }
