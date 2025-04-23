@@ -17,21 +17,22 @@
 
 <body>
     <div id="layoutAuthentication">
-        <div id="layoutAuthentication_content" class="d-flex aling-items-center">
+        <div id="layoutAuthentication_content" class="d-flex align-items-center">
             <main class="w-100">
 
                 @RenderBody()
 
             </main>
-                <div id="layoutAuthentication_footer">
-                    <div class="container-fluid px-4 mt-auto bg-light">
-                        <div class="text-muted">Copyright &copy; GsStore @DateTime.Now.Year</div>
-                        <div>
-                            <a href="#">Políticas description Privacidade</a>
-                            &middot;
-                            <a href="#">Termos &amp; Condições</a>
-                    </div>
+        </div>
+        <div id="layoutAuthentication_footer">
+            <div class="container-fluid px-4 mt-auto bg-light">
+                <div class="text-muted">Copyright &copy; GsStore @DateTime.Now.Year</div>
+                <div>
+                    <a href="#">Políticas description Privacidade</a>
+                    &middot;
+                    <a href="#">Termos &amp; Condições</a>
                 </div>
+
             </div>
         </div>
     </div>
@@ -40,4 +41,5 @@
     <partial name="_Notification"></partial>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
