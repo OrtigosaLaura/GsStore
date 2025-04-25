@@ -1,0 +1,22 @@
+@using Microsoft.AspNetCore.Identity
+@inject GsStore.Data.AppDbContext _db
+@inject SignInManager<Usuario> SignInManager
+@inject UserManager<Usuario> UserManager
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var usuario = await _db.Usuarios.FirstOrDefault(u => u.UserName == user);
+}
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <a asp-action="Login" asp-controller="Account" class="me-2">
+        <img src="~/img/usuarios/no-photo.png" width="40" height="40" class="object-fit-cover rounded-5">
+    </a>
+}
+else
+{
+    <div class="nav-item dropdown me-2">
+        <button class="nav-link text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" ar
+    </div>
+}
