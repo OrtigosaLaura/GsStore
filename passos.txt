@@ -31,3 +31,7 @@ Arquivo .csproj
  adicionar os serviços de Contexto e Identity no Program.cs 
  
 dotnet watch run
+
+
+dotnet tool install -g dotnet-aspnet-codegenerator
+dotnet aspnet-codegenerator controller -name CategoriasController--model Categoria --dataContext AppDbContext --layout "~/Views/Shared/_LayoutAdmin.cshtml" -outDir controllers
